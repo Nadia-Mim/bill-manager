@@ -45,7 +45,7 @@
                 <div class="col-sm-12 col-lg-6">
                     <div class="p-5 bg-light text-center">
                         <!-- income part -->
-                        <h5 class="fw-bolder mb-2">Income</h5>
+                        <h5 class="fw-bolder mb-3">Income</h5>
                         <div class="row mb-2">
                             <label for="inputIncome" class="col-sm-2 col-form-label">Income:</label>
                             <div class="col-sm-10">
@@ -56,7 +56,7 @@
                         </div>
 
                         <!-- expenses part -->
-                        <h5 class="fw-bolder mb-2">Expenses</h5>
+                        <h5 class="fw-bolder mb-3">Expenses</h5>
 
                         <!-- food -->
                         <div class="row mb-2">
@@ -77,24 +77,43 @@
                         </div>
 
                         <!-- clothes -->
-                        <div class="row mb-2">
+                        <div class="row mb-3">
                             <label for="clothes" class="col-sm-2 col-form-label">Clothes:</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="clothes" placeholder="0.00" required>
                                 <span id="clothesAlert" class="text-danger"></span>
                             </div>
-
                         </div>
+
                         <!-- calculation button  -->
                         <button type="button" id="calculate-button"
-                            class="btn btn-info text-white px-5 mb-2">Calculate</button>
+                            class="btn btn-info text-white px-5 mb-3">Calculate</button>
 
                         <!-- result after calculation -->
                         <h5 class="fw-bolder pt-3">Total Expeenses: <span id="total-expense">0.00</span></h5>
                         <span id="expenseAlert" class="text-danger"></span>
 
-                        <h5 class="fw-bolder pb-2">Balance: <span id="balance">0.00</span></h5>
+                        <h5 class="fw-bolder pb-3">Balance: <span id="balance">0.00</span></h5>
                         <span id="balanceAlert" class="text-danger"></span>
+
+                        <!-- bonus section -->
+                        <div class="row mb-3">
+                            <label for="save" class="col-sm-2 col-form-label">Save:</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="save" placeholder="0" required>
+                            </div>
+                            <span class="col-sm-2 pt-2">%</span>
+                            <button type="button" id="save-button"
+                                class="btn btn-info text-white px-3 col-sm-4">Save</button>
+                            <span id="saveAlert" class="text-danger"></span>
+                        </div>
+
+                        <!-- result after save calculation -->
+                        <h5 class="fw-bolder pt-3">Saving Amount: <span id="savingAmount">0.00</span></h5>
+                        <span id="savingAlert" class="text-danger"></span>
+
+                        <h5 class="fw-bolder pb-3">Remaining Balance: <span id="remainingBalance">0.00</span></h5>
+                        <span id="remainingBalanceAlert" class="text-danger"></span>
 
                     </div>
                 </div>
