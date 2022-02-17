@@ -36,7 +36,7 @@
             <div class="row gx-5 gy-3">
                 <!-- image portion -->
                 <div class="col-sm-12 col-lg-6">
-                    <div class="bg-light">
+                    <div>
                         <!-- adding image  -->
                         <img src="images/bill-calculation-img.jpg" class="img-fluid" alt="">
                     </div>
@@ -45,34 +45,50 @@
                 <div class="col-sm-12 col-lg-6">
                     <div class="p-5 bg-light text-center">
                         <!-- income part -->
-                        <h3 class="fw-bolder">Income</h3>
-                        <div class="row mb-3">
+                        <h5 class="fw-bolder">Income</h5>
+                        <div class="row">
                             <label for="inputIncome" class="col-sm-2 col-form-label">Income:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputIncome">
+                                <input type="text" class="form-control" id="inputIncome" placeholder="0.00" required>
+                                <span class="alert"></span>
                             </div>
+
                         </div>
 
                         <!-- expenses part -->
-                        <h3 class="fw-bolder">Expenses</h3>
-                        <div class="row mb-3">
+                        <h5 class="fw-bolder">Expenses</h5>
+                        <div class="row">
                             <label for="food" class="col-sm-2 col-form-label">Food:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="food">
+                                <input type="text" class="form-control" id="food" placeholder="0.00" required>
+                                <span class="alert"></span>
                             </div>
+
                         </div>
-                        <div class="row mb-3">
+                        <div class="row">
                             <label for="rent" class="col-sm-2 col-form-label">Rent:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="rent">
+                                <input type="text" class="form-control" id="rent" placeholder="0.00" required>
+                                <span class="alert"></span>
                             </div>
+
                         </div>
-                        <div class="row mb-3">
+                        <div class="row">
                             <label for="clothes" class="col-sm-2 col-form-label">Clothes:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="clothes">
+                                <input type="text" class="form-control" id="clothes" placeholder="0.00" required>
+                                <span class="alert"></span>
                             </div>
+
                         </div>
+                        <!-- calculation button  -->
+                        <button type="button" class="btn btn-info text-white px-5">Calculate</button>
+
+                        <h5 class="fw-bolder pt-3">Total Expeenses: <span id="total-expense">0.00</span></h5>
+
+                        <h5 class="fw-bolder pb-2">Balance: <span id="balance">0.00</span></h5>
+
+
                     </div>
                 </div>
             </div>
